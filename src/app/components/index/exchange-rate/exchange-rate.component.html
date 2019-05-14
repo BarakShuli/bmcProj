@@ -1,0 +1,17 @@
+<table>
+  <thead>
+    <tr>
+      <th (click)="setSortByProp('NAME')">Currency Name</th>
+      <th (click)="setSortByProp('CURRENCYCODE')">Currency Code</th>
+      <th (click)="setSortByProp('RATE')">Rate</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of currencyList.CURRENCY | sortArrayByProperty: sortByPropString">
+      <td>{{item.NAME}}</td>
+      <td>{{item.CURRENCYCODE}}</td>
+      <td>{{item.RATE}}</td>
+    </tr>
+  </tbody>
+</table>
+<div id="last-update-date">Last update: {{currencyList.LAST_UPDATE |  date}}</div>

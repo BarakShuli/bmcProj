@@ -1,0 +1,28 @@
+table {
+	width:450px;
+	margin:0 auto;
+
+	thead {
+		tr {
+
+			th {
+				cursor: pointer;
+			}
+		}
+	}
+
+	tbody {
+		
+		tr:nth-child(even) {background: #CCC}
+		tr:nth-child(odd) {background: #FFF}
+		
+		tr {
+			td:first-child{text-align: left;padding:0 0 0 30px;}
+			td {
+				text-align: center
+			}
+		}
+	}
+}
+
+#last-update-date {width:450px;margin:10px 0 0 auto; }
